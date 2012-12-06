@@ -320,6 +320,16 @@ typedef void (^MBProgressHUDCompletionBlock)();
 @property (assign) float opacity;
 
 /**
+ * The color of the short message to be displayed below the activity indicator.
+ */
+@property (MB_STRONG) UIColor *labelTextColor;
+
+/**
+ * The color of the details message displayed below the labelText message.
+ */
+@property (MB_STRONG) UIColor *detailsLabelTextColor;
+
+/**
  * The color of the HUD window. Defaults to black. If this property is set, color is set using
  * this UIColor and the opacity property is not used.  using retain because performing copy on
  * UIColor base colors (like [UIColor greenColor]) cause problems with the copyZone.
